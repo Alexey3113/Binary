@@ -1,0 +1,153 @@
+//====================================================================================================
+.header {
+	position: absolute;
+	width: 100%;
+	z-index: 50;
+	left: 0;
+	top: 220px;
+	padding: 274px 0 290px 0;
+    // .header__row 
+    @media (max-width: 1600px) {
+        top: 150px;
+        padding: 180px 0 210px 0; 
+    }
+    @media (max-width: 1300px) {
+        top: 120px;
+        padding: 140px 0 180px 0;
+    }
+    @media (max-width: 1150px) {
+        top: 80px;
+        padding: 150px 0 160px 0;
+    }
+    @media (max-width: 900px) {
+        top: 60px;
+        padding: 125px 10px 120px 10px;
+    }
+    @media (max-width: 767px) {
+        top: 20px;
+        padding: 150px 10px 80px 10px;
+    }
+    @media (max-width: 550px) {
+        top: 20px;
+        padding: 180px 0 200px 0;
+    }
+    
+
+	&__row {
+	}
+
+	// .header__body
+
+	&__body {
+
+	}
+
+	// .header__body-title
+
+	&__body-title {
+        color: #ffffff;
+        padding: 0 10px 0 10px;
+		font-size: 34px;
+		font-family: "Lato";
+		line-height: 40px;
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 900;
+		letter-spacing: 5.43px;
+        margin: 0 0 12px 0;
+        @media (max-width: 1150px) {
+            font-size: 30px;
+        }
+        @media (max-width: 900px) {
+            font-size: 26px;
+        }
+        @media (max-width: 767px) {
+            font-size: 20px;
+            margin: 0 0 20px 0;
+        }
+        @media (max-width: 550px) {
+            font-size: 16px;
+            margin: 0 0 40px 0;
+        }
+		
+	}
+
+	// .header__body-text
+
+	&__body-text {
+		font-size: 26px;
+		letter-spacing: 4.15px;
+		position: relative;
+		color: #dbdee5;
+        text-align: center;
+        @media (max-width: 1150px) {
+            font-size: 22px;
+            
+        }
+        @media (max-width: 900px) {
+            font-size: 18px;
+        }
+        @media (max-width: 767px) {
+            font-size: 15px;
+        }
+        @media (max-width: 550px) {
+            font-size: 13px;
+        }
+
+		&:after{
+			content: '';
+			width: 105px;
+			height: 2px;
+			background-color: #ffffff;
+			display: block;
+			position: absolute;
+			left: 50%;
+			@include tr(-50%,0px,0px);
+			top: 70px;
+            text-align: center;
+            @media (max-width: 550px) {
+                top:50px;
+            }
+		}
+	}
+
+	// .header__body-btn
+
+	&__body-btn {
+		// margin: 250px 0 0 0;
+	}
+}
+.header-logo {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	@include tr(-50%,0px,0px);
+	z-index: 3;
+}
+.btn {
+}
+
+//====================================================================================================
+/*
+	Стиль иконки бургера
+	.icon-menu{
+		display: block;
+		position: absolute;
+		top: 18px;
+		right: 10px;
+		width:30px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 5;
+		span{@include anim(0.3s,0s);top: 8px;left: 0px;position: absolute;width: 100%;height: 2px;background-color: #000;
+			&:first-child{top: 0px;}
+			&:last-child{top: auto;bottom: 0px;}
+		}
+		&.active{
+			span{@include scale(0);
+				&:first-child{@include rotate(-45deg);top: 8px;}
+				&:last-child{@include rotate(45deg);bottom: 8px;}
+			}
+		}
+	}
+*/
